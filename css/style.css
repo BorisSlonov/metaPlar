@@ -376,10 +376,10 @@ img {
   z-index: 1003;
   top: -150px;
   left: 0;
-  right: -110px;
-  bottom: -50px;
+  right: -115px;
+  bottom: -55px;
   background-image: url("../img/elipse.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   transform: scale(1.13);
 }
