@@ -21,20 +21,14 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 $(document).ready(function () {
-  var $element = $(".block1");
-  let counter = 0;
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    //Если скролл до конца елемента
-    // var offset = $element.offset().top + $element.height();
-    //Если скролл до начала елемента
-    // var offset = $element.offset().top;
 
     if ($(window).width() <= 1240) {
-      if (scroll <= 60) {
+      if (scroll <= 40) {
         $(".header").css({
           position: "absolute",
-          top: "60px",
+          top: "40px",
           bottom: "auto",
         });
       } else {
