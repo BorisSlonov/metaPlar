@@ -198,10 +198,14 @@ img {
     right: 0;
     padding-left: 0px;
     padding-right: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: linear-gradient(95.55deg, rgba(9, 21, 38, 0.8) -0.2%, rgba(11, 31, 61, 0.8) 100.33%);
+  backdrop-filter: blur(50px);
   }
   .header__logo-img {
     display: block;
-    max-width: 80px;
+    width: 80px;
   }
   .header__body {
     padding: 15px 0;
@@ -348,9 +352,7 @@ img {
 
 
 @media(max-width:550px) {
-  .header {
-    background-color: transparent;
-  }
+
 
   .header .container {
     padding-left: 0;
@@ -474,6 +476,8 @@ img {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
+
+
 
 @media (max-width: 1240px) {
  
