@@ -432,7 +432,7 @@ img {
   background-image: url("../img/elipse.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  transform: scale(1.13);
+  transform: scale(1.13) translate(-20px, 20px);
 }
 .block1__body::before {
   content: "";
