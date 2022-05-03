@@ -84,6 +84,7 @@ img {
   text-transform: uppercase;
   color: var(--white);
   border-radius: 25px;
+  transition: all 1s;
 }
 .header__body {
   width: 100%;
@@ -171,6 +172,9 @@ img {
 }
 
 @media (max-width: 1240px) {
+  .header {
+    position: fixed;
+  }
   .header__list {
     display: flex;
     justify-content: space-between;
@@ -465,11 +469,11 @@ img {
   content: "";
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 852px;
   left: 0;
   right: 0;
-  top: 45px;
-  height: 100px;
+  top: 0;
+  height: 140px;
   background-color: var(--block-bg);
   z-index: 1004;
 }
@@ -500,11 +504,9 @@ img {
   }
 
   .header {
-    top: 40px;
+    top: 25px;
   }
-  .block1 {
-    margin-top: 40px;
-  }
+
 }
 
 @media (max-width: 768px) {

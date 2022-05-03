@@ -25,24 +25,24 @@ $(document).ready(function () {
     var scroll = $(window).scrollTop();
 
     if ($(window).width() <= 1240) {
-      if (scroll <= 40) {
-        $(".header").css({
-          position: "absolute",
-          top: "40px",
-          bottom: "auto",
-        });
-      } else {
-        $(".header").css({ position: "fixed", top: "0", bottom: "auto" });
-      }
+      // if (scroll <= 40) {
+      //   $(".header").css({
+      //     position: "absolute",
+      //     top: "40px",
+      //     bottom: "auto",
+      //   });
+      // } else {
+      //   $(".header").css({ position: "fixed", top: "25px", bottom: "auto" });
+      // }
     } else {
-      if (scroll <= 180) {
+      if (scroll <= 700) {
         $(".header").css({
           position: "absolute",
           top: "180px",
           bottom: "auto",
         });
       } else {
-        $(".header").css({ position: "fixed", top: "0", bottom: "auto" });
+        $(".header").css({ position: "fixed", top: "50px", bottom: "auto" });
       }
     }
   });
