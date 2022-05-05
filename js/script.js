@@ -20,20 +20,30 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const swiper = new Swiper(".swiper-advantages", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if ($(window).width() <= 1240) {
-      // if (scroll <= 40) {
-      //   $(".header").css({
-      //     position: "absolute",
-      //     top: "40px",
-      //     bottom: "auto",
-      //   });
-      // } else {
-      //   $(".header").css({ position: "fixed", top: "25px", bottom: "auto" });
-      // }
     } else {
       if (scroll <= 700) {
         $(".header").css({
@@ -45,5 +55,22 @@ $(document).ready(function () {
         $(".header").css({ position: "fixed", top: "50px", bottom: "auto" });
       }
     }
+  });
+
+  jQuery(".form").submit(function () {
+    var Name = jQuery("#Name").val();
+    var Phone = jQuery("#Phone").val();
+    var Quession = jQuery("#Quession").val();
+    var http = new XMLHttpRequest();
+    var url =
+      "https://script.google.com/macros/s/AKfycbw1fEVCr9ib6GJ9JzAD-Tmy-ZWCRNLwZhW1Q6AGsJ7IcBwhL4W-/exec";
+    var params = "p1=" + Name + "&p2=" + Phone + "&p3=" + Quession;
+    http.open("GET", url + "?" + params, true);
+    http.onreadystatechange = function () {
+      if (http.readyState == 4 && http.status == 200) {
+        //alert(http.responseText);
+      }
+    };
+    http.send(null);
   });
 });

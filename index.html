@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -75,33 +79,207 @@
           </nav>
         </div>
       </header>
-      <main class="main" style="height: 100000px; display: block">
-        <div class="block1">
-          <div class="container">
-            <div class="block1__body">
-              <div class="block1__item">
-                <h1 class="block1__h1">
-                  Earning for <br />
-                  years to come
-                </h1>
-                <p class="block1__p">
-                  By accepting our contract, you will get the opportunity to
-                  earn money safely for many years to come.
-                </p>
-                <a href="#" class="btn"> See more </a>
+      <main class="main">
+        <section class="section-block1">
+          <div class="block1">
+            <div class="container">
+              <div class="block1__body">
+                <div class="block1__item">
+                  <h1 class="block1__h1">
+                    Earning for <br />
+                    years to come
+                  </h1>
+                  <p class="block1__p">
+                    By accepting our contract, you will get the opportunity to
+                    earn money safely for many years to come.
+                  </p>
+                  <a href="#" class="btn"> See more </a>
+                </div>
+                <div class="block1__item">
+                  <img
+                    class="block1__img"
+                    src="img/page1-phone.png"
+                    alt="img phone"
+                  />
+                </div>
               </div>
-              <div class="block1__item">
-                <img
-                  class="block1__img"
-                  src="img/page1-phone.png"
-                  alt="img phone"
+              <svg
+                class="elipse"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1432"
+                height="742"
+                viewBox="0 0 1432 742"
+                fill="none"
+              >
+                <path
+                  d="M1419.21 35.0923C1422.5 41.9793 1422.81 51.2732 1418.39 63.8112C1413.96 76.3853 1405.09 91.2446 1391.6 108.137C1364.66 141.883 1320.78 181.947 1262.92 225.737C1147.34 313.214 977.717 414.275 781.46 508.012C585.203 601.748 399.986 670.166 259.303 705.084C188.88 722.563 130.137 731.515 86.9571 731.259C65.3431 731.131 48.2087 728.693 35.6448 724.235C23.1169 719.79 16.0828 713.708 12.7934 706.821C9.50399 699.934 9.19434 690.64 13.6107 678.102C18.0398 665.528 26.9129 650.669 40.3979 633.777C67.3377 600.031 111.221 559.966 169.077 516.177C284.657 428.699 454.283 327.638 650.54 233.902C846.797 140.166 1032.01 71.7476 1172.7 36.8296C1243.12 19.3503 1301.86 10.3988 1345.04 10.6545C1366.66 10.7825 1383.79 13.22 1396.36 17.678C1408.88 22.1231 1415.92 28.2052 1419.21 35.0923Z"
+                  stroke="url(#paint0_linear_46_38)"
+                  stroke-opacity="0.01"
+                  stroke-width="20"
+                  class="szBkPvXk_0"
                 />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_46_38"
+                    x1="-1.9579"
+                    y1="726.522"
+                    x2="1433.14"
+                    y2="-4.04686"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00BFD9" />
+                    <stop offset="1" stop-color="#00CFEC" />
+                  </linearGradient>
+                </defs>
+                <style data-made-with="vivus-instant">
+                  .szBkPvXk_0 {
+                    stroke-dasharray: 3261 3263;
+                    stroke-dashoffset: 3262;
+                    animation: szBkPvXk_draw_0 8400ms linear 0ms infinite,
+                      szBkPvXk_fade 8400ms linear 0ms infinite;
+                  }
+                  @keyframes szBkPvXk_draw {
+                    100% {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+                  @keyframes szBkPvXk_fade {
+                    0% {
+                      stroke-opacity: 1;
+                    }
+                    96.29629629629629% {
+                      stroke-opacity: 1;
+                    }
+                    100% {
+                      stroke-opacity: 0;
+                    }
+                  }
+                  @keyframes szBkPvXk_draw_0 {
+                    3.7037037037037033% {
+                      stroke-dashoffset: 3262;
+                    }
+                    40.74074074074074% {
+                      stroke-dashoffset: 0;
+                    }
+                    100% {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+                </style>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="section section-choose-us">
+          <div class="container">
+            <div class="choose-us">
+              <h2 class="main-h2">Why choose us?</h2>
+              <div class="choose-us__body">
+                <div class="choose-us__item card-icon card-icon_1">
+                  <img
+                    class="card-icon__icon"
+                    src="img/icons/1.svg"
+                    alt="icon"
+                  />
+                  <p class="card-icon__txt">
+                    We have a referral system "pyramid". 7% from a friend who
+                    replenished the balance, as well as 3% from your friend's
+                    invited friends.
+                  </p>
+                </div>
+                <div class="choose-us__item card-icon card-icon_2">
+                  <img
+                    class="card-icon__icon"
+                    src="img/icons/2.svg"
+                    alt="icon"
+                  />
+                  <p class="card-icon__txt">
+                    Reliable withdrawal of funds in a short time. Excellent
+                    speed and low commission.
+                  </p>
+                </div>
+                <div class="choose-us__item card-icon card-icon_3">
+                  <img
+                    class="card-icon__icon"
+                    src="img/icons/3.svg"
+                    alt="icon"
+                  />
+                  <p class="card-icon__txt">
+                    A large number of cryptocurrencies available for payment and
+                    withdrawal, as well as support for many payment systems.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="elipse"></div>
           </div>
-        </div>
+        </section>
+
+        <section class="section section-our-advantages">
+          <div class="container">
+            <h2 class="main-h2">Our advantages</h2>
+            <div class="our-advantages">
+              <!-- Slider main container -->
+              <div class="swiper swiper-advantages">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="advantages-slide">
+                      <h3 class="advantages-slide__title">
+                        Convenience is our credo
+                      </h3>
+                      <div class="advantages-slide__body">
+                        <div
+                          class="advantages-slide__item advantages-slide__item_1"
+                        ></div>
+                        <p class="advantages-slide__item">
+                          Easy system navigation on PC and mobile devices
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="advantages-slide">
+                      <h3 class="advantages-slide__title">
+                        Convenience is our credo
+                      </h3>
+                      <div class="advantages-slide__body">
+                        <div
+                          class="advantages-slide__item advantages-slide__item_1"
+                        ></div>
+                        <p class="advantages-slide__item">
+                          Easy system navigation on PC and mobile devices
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="advantages-slide">
+                      <h3 class="advantages-slide__title">
+                        Convenience is our credo
+                      </h3>
+                      <div class="advantages-slide__body">
+                        <div
+                          class="advantages-slide__item advantages-slide__item_1"
+                        ></div>
+                        <p class="advantages-slide__item">
+                          Easy system navigation on PC and mobile devices
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <footer class="footer"></footer>
@@ -110,6 +288,7 @@
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
