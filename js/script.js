@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 const swiper = new Swiper(".swiper-advantages", {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   centeredSlides: true,
   centeredSlidesBounds: true,
 
@@ -33,9 +33,18 @@ const swiper = new Swiper(".swiper-advantages", {
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    draggable: true,
+    clickable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    1240: {
+      slidesPerView: 3,
+    },
   },
 });
 
