@@ -867,3 +867,118 @@ img {
   }
 }
 /* our-advantages END */
+
+/* our-services START */
+.our-services__body {
+  background-color: var(--block-bg);
+  padding: 20px 20px 20px 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-services__item:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.our-services__item:last-child {
+  flex-basis: 50%;
+  height: 460px;
+  background-image: url("../img/our-services.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.our-services__txt {
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  max-width: 440px;
+  margin: 0;
+}
+@media(max-width:768px) {
+  .our-services__body {
+    background-image: url("../img/our-services.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  .our-services__item:last-child {
+    display: none;
+  }
+
+  .our-services__txt {
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 35px;
+    background-color: var(--block-bg);
+    margin-bottom: 30px;
+  }
+}
+/* our-services END */
+
+.footer {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.footer__ul {
+  background-color: var(--block-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-radius: 50px;
+  padding: 0 50px 50px 50px;
+}
+
+.footer__link {
+  display: inline-block;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+  border-radius: 100px;
+}
+
+.footer__link:hover {
+  background: #112a4f;
+}
+
+.footer__li:nth-child(3) .footer__link:hover {
+  background-color: none;
+}
+
+
+@media(max-width:1240px) {
+  .footer__link {
+    padding: 8px 15px;
+    font-size: 18px;
+  }
+}
+
+
+@media(max-width:1024px) {
+
+  .footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+  .footer__link {
+    display: none;
+  }
+
+  .footer__ul {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
