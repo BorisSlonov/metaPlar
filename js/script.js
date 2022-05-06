@@ -48,6 +48,8 @@ const swiper = new Swiper(".swiper-advantages", {
   },
 });
 
+new WOW().init();
+
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -61,25 +63,13 @@ $(document).ready(function () {
           bottom: "auto",
         });
       } else {
-        $(".header").css({ position: "fixed", top: "50px", bottom: "auto" });
+        $(".header").css({
+          position: "fixed",
+          top: "50px",
+          bottom: "auto",
+          animationName: "fadeIn"
+        });
       }
     }
-  });
-
-  jQuery(".form").submit(function () {
-    var Name = jQuery("#Name").val();
-    var Phone = jQuery("#Phone").val();
-    var Quession = jQuery("#Quession").val();
-    var http = new XMLHttpRequest();
-    var url =
-      "https://script.google.com/macros/s/AKfycbw1fEVCr9ib6GJ9JzAD-Tmy-ZWCRNLwZhW1Q6AGsJ7IcBwhL4W-/exec";
-    var params = "p1=" + Name + "&p2=" + Phone + "&p3=" + Quession;
-    http.open("GET", url + "?" + params, true);
-    http.onreadystatechange = function () {
-      if (http.readyState == 4 && http.status == 200) {
-        //alert(http.responseText);
-      }
-    };
-    http.send(null);
   });
 });
