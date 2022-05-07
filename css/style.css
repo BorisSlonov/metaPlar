@@ -481,26 +481,28 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: -50px;
-  height: 120px;
-  max-width: 900px;
+  top: -40px;
+  height: 190px;
+  max-width: 700px;
   z-index: 1004;
   background-color: var(--block-bg);
 }
-.block1 .btn {
-  position: relative;
-  z-index: 1004;
-}
-.block1 .container::after {
+
+.block1 .container::before {
   content: "";
-  display: block;
-  width: 100%;
-  max-width: 852px;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  height: 140px;
+  bottom: 0;
+  height: 190px;
+  max-width: 50px;
+  z-index: 1004;
   background-color: var(--block-bg);
+  border-bottom-left-radius: 25px;
+}
+
+.block1 .btn {
+  position: relative;
   z-index: 1004;
 }
 
@@ -508,6 +510,11 @@ img {
   overflow-x: hidden;
 }
 
+.block1__item:first-child {
+  position: relative;
+  z-index: 1006;
+  background-color: var(--block-bg) !important;
+}
 .block1__body_page-about {
   text-align: center;
   padding: 120px 0 60px;
@@ -519,7 +526,6 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
 
 .block1__body_page-about .block1__item:last-child {
   display: none;
@@ -563,8 +569,8 @@ img {
     margin-top: 30px;
   }
 
-  .block1__body_page-about  {
-    padding: 60px 0; 
+  .block1__body_page-about {
+    padding: 60px 0;
   }
 }
 
@@ -588,7 +594,6 @@ img {
     padding-bottom: 60px;
   }
 
- 
   .block1__item:last-child {
     display: none;
   }
@@ -903,6 +908,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
 .our-services__item:first-child {
   display: flex;
   flex-direction: column;
@@ -917,6 +923,21 @@ img {
   background-position: 50% 50%;
   border-radius: 50px;
   margin-left: 20px;
+}
+
+.our-services__item_page-about:last-child {
+  background-image: url("../img/hand-btc-bg.jpg");
+  flex-basis: 50%;
+}
+
+.our-services__item_page-about-img {
+  display: none;
+  border-radius: 35px;
+}
+
+.our-services__txt.our-services__txt_page-about {
+  font-size: 24px;
+  flex-basis: 50%;
 }
 
 .our-services__txt {
@@ -939,12 +960,43 @@ img {
     display: none;
   }
 
+  .our-services__item_page-about-img {
+    display: block;
+    width: 100%;
+  }
+
   .our-services__txt {
     font-size: 20px;
     padding: 30px;
     border-radius: 35px;
     background-color: var(--block-bg);
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-services__body.our-services__body_page-about {
+    flex-direction: column;
+    background-image: none;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .our-services__item.our-services__item_page-about {
+    display: block;
+    background-image: url("../img/hand-btc-bg.jpg");
+    background-color: #fff;
+    height: 210px;
+    width: 100%;
+    margin-left: 0;
+    flex-basis: 40%;
+    flex-shrink: 0;
+  }
+  .our-services__txt.our-services__txt_page-about {
+    font-size: 20px;
+  }
+  .our-services__txt.our-services__txt_page-about {
+    margin: 0;
   }
 }
 /* our-services END */
@@ -1006,3 +1058,73 @@ img {
     padding-bottom: 30px;
   }
 }
+
+/* referal-system START */
+
+.referal-system__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.referal-system__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--block-bg);
+  border-radius: 25px;
+}
+.referal-system__item:first-child {
+  flex-basis: 70%;
+}
+.referal-system__item:last-child {
+  margin-left: 20px;
+  flex-basis: 30%;
+}
+
+.referal-system__ab-bg {
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 25px;
+}
+
+@media (max-width: 550px) {
+  .referal-system__body {
+    flex-direction: column;
+  }
+  .referal-system__item:last-child {
+    margin-left: 0;
+    margin-top: 15px;
+    flex-basis: 30%;
+    display: none;
+  }
+}
+
+/* referal-system END */
+
+/* text-block START */
+
+.text-block__body {
+  background-color: var(--block-bg);
+  padding: 30px;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.text-block__p {
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+@media(max-width:768px) {
+  .text-block__p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+/* text-block END */
