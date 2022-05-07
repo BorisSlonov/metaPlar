@@ -24,32 +24,34 @@
   </head>
   <body>
     <div class="overflow-x-hidden">
-      <div
-        class="blur-circle"
-        style="
-          width: 550px;
-          height: 550px;
-          border-radius: 50%;
-          background: #112b50;
-          filter: blur(258px);
-          position: absolute;
-          top: -5%;
-          left: -5%;
-        "
-      ></div>
-      <div
-        class="blur-circle"
-        style="
-          width: 1100px;
-          height: 1100px;
-          border-radius: 50%;
-          background: #112b50;
-          filter: blur(258px);
-          position: absolute;
-          top: 300px;
-          right: -450px;
-        "
-      ></div>
+      <div class="blure-curcle-container">
+        <div
+          class="blur-circle"
+          style="
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            background: #112b50;
+            filter: blur(258px);
+            position: absolute;
+            top: -5%;
+            left: -5%;
+          "
+        ></div>
+        <div
+          class="blur-circle"
+          style="
+            width: 1100px;
+            height: 1100px;
+            border-radius: 50%;
+            background: #112b50;
+            filter: blur(258px);
+            position: absolute;
+            top: 300px;
+            right: -450px;
+          "
+        ></div>
+      </div>
       <header class="header container">
         <div class="header__body">
           <!-- logo -->
@@ -77,7 +79,7 @@
                     <a href="/" class="header__link link-hover"> Home </a>
                   </li>
                   <li class="main-menu__li">
-                    <a href="/page-buy.html" class="header__link link-hover">
+                    <a href="page-buy.html" class="header__link link-hover">
                       buy
                     </a>
                   </li>
@@ -91,7 +93,7 @@
                     </a>
                   </li>
                   <li class="main-menu__li">
-                    <a href="/page-about.html" class="header__link link-hover">
+                    <a href="page-about.html" class="header__link link-hover">
                       about us
                     </a>
                   </li>
@@ -161,7 +163,7 @@
                     y2="-4.04686"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#00BFD9" />
+                    <stop stop-color="#00BFD9" offset="0" />
                     <stop offset="1" stop-color="#00CFEC" />
                   </linearGradient>
                 </defs>
@@ -382,7 +384,6 @@
           </div>
         </div>
       </footer>
-
     </div>
 
     <script
