@@ -67,9 +67,14 @@ $(document).ready(function () {
           position: "fixed",
           top: "50px",
           bottom: "auto",
-          animationName: "fadeIn"
+          animationName: "fadeIn",
         });
       }
     }
+  });
+
+  $(".crypto-list__btn").click(function () {
+    $(".crypto-list__row-hidden").addClass("crypto-list__row-hidden_show");
+    $(".crypto-list__btn").addClass("crypto-list__btn-hidden");
   });
 });
