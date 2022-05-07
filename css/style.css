@@ -139,6 +139,7 @@ img {
   max-width: 220px;
 }
 
+
 .header__menu {
   width: 100%;
 }
@@ -873,6 +874,9 @@ img {
 }
 
 @media (max-width: 1240px) {
+  .swiper-advantages .swiper-slide-active {
+    transform: scale(1);
+  }
   .swiper-advantages .swiper-slide.swiper-slide-prev {
     margin-right: 0;
   }
