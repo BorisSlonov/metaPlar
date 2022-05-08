@@ -46,14 +46,62 @@ img {
 }
 
 .main {
+  position: relative;
   display: block;
 }
 
 .container {
+  position: relative;
+  z-index: 10;
   width: 100%;
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.overflow-x-hidden {
+  position: relative;
+  overflow: hidden;
+}
+
+.overflow-x-hidden::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: -200px;
+  top: -200px;
+  background-image: url("../img/circle-bg.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.overflow-x-hidden::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 1200px;
+  height: 1200px;
+  right: -200px;
+  top: 10%;
+  background-image: url("../img/circle-bg-big.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  bottom: -1000px;
+  left: -200px;
+  background-image: url("../img/circle-bg-big.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
 }
 
 @media (max-width: 1240px) {
@@ -289,7 +337,6 @@ img {
       rgba(9, 21, 38, 0.8) -0.2%,
       rgba(11, 31, 61, 0.8) 100.33%
     );
-   
   }
   .main-menu__list {
     border-bottom-left-radius: 25px;
@@ -329,7 +376,6 @@ img {
       rgba(9, 21, 38, 0.8) -0.2%,
       rgba(11, 31, 61, 0.8) 100.33%
     );
-
   }
   .header__logo-img {
     display: block;
@@ -628,15 +674,9 @@ img {
   position: relative;
 }
 
-
-
 .block1 .btn {
   position: relative;
   z-index: 1004;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .block1__item:first-child {
@@ -761,7 +801,7 @@ img {
 .card-icon {
   position: relative;
   background: #111c2a;
- 
+
   border-radius: 50px;
   padding-left: 60px;
   padding-right: 60px;
@@ -785,7 +825,7 @@ img {
 
 .card-icon__icon {
   background-color: rgba(0, 189, 215, 0.06);
-  
+
   border-radius: 50%;
 }
 
