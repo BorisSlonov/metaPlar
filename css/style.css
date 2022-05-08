@@ -520,6 +520,10 @@ img {
 /* HEADER END   */
 
 /* block1 START   */
+.section-block1 .container {
+  background-color: var(--block-bg);
+  border-radius: 35px;
+}
 .block1 {
   margin-top: 180px;
   position: relative;
@@ -527,8 +531,6 @@ img {
 }
 .block1 .hidden-elips {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
 }
 .block1__body {
   position: relative;
@@ -612,11 +614,11 @@ img {
 .block1 .hidden-elips::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -15px;
   right: 0;
   bottom: 0;
   height: 190px;
-  max-width: 50px;
+  max-width: 65px;
   z-index: 1004;
   background-color: var(--block-bg);
   border-bottom-left-radius: 25px;
@@ -1390,8 +1392,11 @@ img {
   border-radius: 35px;
   padding: 40px 20px;
   background: #192a40;
-  -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+}
+.block1-buy__item:last-child {
+  flex-basis: 53%;
 }
 .block1-buy__item:last-child img {
   border-radius: 35px;
@@ -1493,6 +1498,7 @@ img {
 
 /* crypto-list START */
 .crypto-list__body {
+  overflow: hidden;
   padding: 60px;
   border-radius: 35px;
   background-color: var(--block-bg);
@@ -1533,11 +1539,18 @@ img {
   max-width: 120px;
 }
 
+.crypto-list__btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .crypto-list__btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
   font-size: 20px;
+  margin-top: 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
