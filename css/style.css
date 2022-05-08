@@ -110,6 +110,9 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
+  .block1-buy__body {
+    border-radius: 25px;
+  }
 }
 
 .main-h2 {
@@ -393,7 +396,7 @@ img {
     width: 80px;
   }
   .header__body {
-    padding: 15px 0;
+    padding: 15px;
   }
   .header__list {
     position: fixed;
@@ -744,11 +747,14 @@ img {
   .block1__item_hidden-elipse:first-child::before {
     display: none;
   }
+  .block1 .hidden-elips::before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .block1 {
-    margin-top: 60px;
+    margin-top: 160px;
   }
   .block1-buy__body,
   .block1__body {
@@ -1174,7 +1180,9 @@ img {
 .our-services__item.our-services__item_page-buy {
   background-image: url("../img/abstract-stat.jpg");
 }
-
+.our-services__item.our-services__item_page-sup {
+  background-image: url("../img/sup2.jpg");
+}
 .our-services__item_page-about-img {
   display: none;
   border-radius: 35px;
@@ -1220,6 +1228,9 @@ img {
     background-color: var(--block-bg);
     margin-bottom: 30px;
   }
+  .our-services__item.our-services__item_page-sup {
+    flex-basis: 10%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1254,6 +1265,7 @@ img {
     margin: 0;
   }
 }
+
 /* our-services END */
 
 .footer {
@@ -1499,6 +1511,16 @@ img {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.form-buy__textarea {
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 50px 30px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  resize: none;
+}
+
 .form-buy__btn {
   padding-left: 25px;
   padding-right: 25px;
@@ -1509,24 +1531,24 @@ img {
   margin-left: 15px;
 }
 
-.form-buy__input::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-buy__input:-moz-placeholder {
+:-moz-placeholder {
   /* Firefox 18- */
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-buy__input::-moz-placeholder {
+::-moz-placeholder {
   /* Firefox 19+ */
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-buy__input:-ms-input-placeholder {
+:-ms-input-placeholder {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1651,3 +1673,29 @@ img {
   }
 }
 /* crypto-list END */
+.send-msg {
+  padding: 0;
+  border-radius: 35px;
+  background-color: transparent;
+}
+.send-msg__body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #111c2a;
+  border-radius: 35px;
+  max-width: 750px;
+  padding: 60px 40px;
+}
+
+.send-msg__item img {
+  max-width: 170px;
+}
+
+.send-msg__item p {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;  
+  color: #FFFFFF;
+}

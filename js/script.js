@@ -77,3 +77,7 @@ $(document).ready(function () {
     $(".crypto-list__btn").addClass("crypto-list__btn-hidden");
   });
 });
+
+document.querySelector(".btn").onclick = function (e) {
+  document.querySelectorAll(".form-buy__input").value = "";
+};
