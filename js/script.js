@@ -79,5 +79,10 @@ $(document).ready(function () {
 });
 
 document.querySelector(".btn").onclick = function (e) {
-  document.querySelectorAll(".form-buy__input").value = "";
+  document.querySelector(".form-buy__input").value = "";
+  document.querySelector(".form-buy__input_1").value = "";
+  document.querySelector(".form-buy__input_2").value = "";
+  document.querySelector(".form-buy__input_3").value = "";
+  document.querySelector(".form-buy__input_4").value = "";
+
 };
