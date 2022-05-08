@@ -67,7 +67,6 @@ $(document).ready(function () {
           position: "fixed",
           top: "50px",
           bottom: "auto",
-          animationName: "fadeIn",
         });
       }
     }
