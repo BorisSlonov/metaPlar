@@ -142,6 +142,17 @@ img {
   .main-h2 {
     margin-bottom: 30px;
   }
+  .overflow-x-hidden::before {
+    display: none;
+  }
+
+  .overflow-x-hidden::after {
+    display: none;
+  }
+
+  .main::before {
+    display: none;
+  }
 }
 
 /* GENERAL END */
