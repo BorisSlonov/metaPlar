@@ -756,6 +756,9 @@ img {
   .block1 {
     margin-top: 160px;
   }
+  .block1_main {
+    padding-top: 0px;
+  }
   .block1-buy__body,
   .block1__body {
     -webkit-box-orient: vertical;
